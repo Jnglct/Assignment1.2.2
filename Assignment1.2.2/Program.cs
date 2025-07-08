@@ -6,18 +6,24 @@ namespace Assignment1._2._2
     {
         static void Main(string[] args)
         {
-            int i = 0;
+            Console.WriteLine("This will find the total natural numbers going to N, type in N: ");
+            int naturalN = Convert.ToInt32(Console.ReadLine());
             int sum = 0;
-            Console.WriteLine("The first 10 natural number is: ");
-            for (int n = 1; n < 11; n++)
+            Console.WriteLine();
+
+            Console.WriteLine("The first N natural number is: ");
+            for (int i = 1; i <= naturalN; i++)
             {
-                Console.Write(n + " ");
-                sum = n + i;
-                i = sum;
+                Console.Write(i + " ");
+                sum += i;
+
+                
                 
             }
             Console.WriteLine();
+         
             Console.WriteLine("The Sum is: " + sum);
+            Console.Read();
         }
     }
 }
